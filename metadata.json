@@ -1,0 +1,6 @@
+{
+  "name": "RRF HR Agreement & Verification Management System",
+  "description": "রুরাল রিকন্সট্রাকশন ফাউন্ডেশন (RRF)-এর কর্মী চুক্তিপত্র, ২৫ টাকার প্রত্যয়ন পত্র ও তথ্য যাচাইকরণ ব্যবস্থাপনা সিস্টেম",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Hind Siliguri', 'Outfit', sans-serif;
+  }
+  .font-serif-bn {
+    font-family: 'Noto Serif Bengali', serif;
+  }
+}
+
+/* Custom Print Rules for RRF Legal & A4 Forms */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .page-break {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  /* Stamp Spacing Offset for Legal Pages 1 & 2 when option is active */
+  .stamp-margin-top {
+    padding-top: 8.8cm !important;
+  }
+
+  .print-container {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  @page {
+    margin: 12mm 15mm 15mm 15mm;
+  }
+
+  /* Specific Legal Size Page Setup */
+  @page legal-size {
+    size: 8.5in 14in;
+    margin: 12mm 15mm 15mm 15mm;
+  }
+
+  /* Specific A4 Size Page Setup */
+  @page a4-size {
+    size: 210mm 297mm;
+    margin: 12mm 15mm 15mm 15mm;
+  }
+
+  .legal-page {
+    page: legal-size;
+    min-height: 12.8in;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .a4-page {
+    page: a4-size;
+    min-height: 270mm;
+    position: relative;
+    box-sizing: border-box;
+  }
+}
